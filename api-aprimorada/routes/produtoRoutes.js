@@ -29,6 +29,7 @@ produtoRoutes.post('/', async (req, res) => {
 
 produtoRoutes.get('/:id', async (req, res, next) => {
     try {
+        const id = Number(req.params.id);
         if (!Number.isInteger(id)) return res.status(400).json({ erro: 'ID deve ser inteiro' });
 
         const produto = await catalogo.buscarPorId(id);

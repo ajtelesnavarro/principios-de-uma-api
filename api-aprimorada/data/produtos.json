@@ -5,5 +5,12 @@
     "preco": 120,
     "estoque": 4,
     "categoria": "Periféricos"
+  },
+  {
+    "id": 2,
+    "nome": "Vou explodir",
+    "preco": 67,
+    "estoque": 6,
+    "categoria": "BOOM"
   }
 ]
