@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS produtos(
+	id int AUTO_INCREMENT PRIMARY KEY,
+	nome varchar(255) NOT NULL,
+	preco DECIMAL(10, 2) NOT NULL,
+	estoque INT NOT NULL DEFAULT 0,
+	categoria VARCHAR(50) NOT NULL
+);
+
+USE loja_api;
+
+CREATE DATABASE loja_api;

@@ -1,4 +1,5 @@
-const nomesObrigatorios = ['PORT', 'NOME_ALUNO', 'TURMA'];
+const nomesObrigatorios = ['PORT', 'DB_HOST', 'DB_PORT', 'DB_USER', 'DB_NAME'];
+//DB_PASS: Deixaremos de fora, pois ele não aceitará senha vazia(""), que é o padrão do XAMPP, vai dar erro pq ecnicamente n tem "nada" no DB_PASS ent quando for pedir vai pedir alguma coisa, mesmo se essa alguma coisa for a senha vazia (padrão do XAMPP)
 
 export function carregarAmbiente(arquivoDeConfiguracao) {
   if (arquivoDeConfiguracao) {
