@@ -1,4 +1,4 @@
-//criarProdutoModel é tipo uma biblioteca grandona e que dentro vc pode chamar as 3 funç~]oes individualmente ou juntas
+//criarProdutoModel é tipo uma biblioteca grandona e que dentro vc pode chamar as 3 funções individualmente ou juntas
 
 export function criarProdutoModel({pool}){
     async function listarTodos() {
