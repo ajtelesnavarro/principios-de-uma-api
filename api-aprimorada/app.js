@@ -28,8 +28,8 @@ app.use((req, res) => {
   res.status(404).json({ erro: `A rota ${req.method} ${req.originalUrl} não existe` });
 });
 
+//erro seria o middleware
 app.use((erro, req, res, _next) => {
   console.error('Erro de Sistema: ', erro.message);
   res.status(500).json({ erro: 'Falha interna do servidor' });
 });
-
