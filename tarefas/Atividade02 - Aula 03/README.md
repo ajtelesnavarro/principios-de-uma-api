@@ -34,9 +34,6 @@ Soldagem produz array vazio, mensagem específica e código `1`.
 
 
 
-
-
-
 ## Saída esperada
 
 Considere a atividade concluída quando o programa atender exatamente aos contratos observáveis abaixo. Nomes de propriedades, mensagens, códigos HTTP e valores são literais.

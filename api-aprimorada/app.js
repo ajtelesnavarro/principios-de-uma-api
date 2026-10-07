@@ -31,5 +31,5 @@ app.use((req, res) => {
 //erro seria o middleware
 app.use((erro, req, res, _next) => {
   console.error('Erro de Sistema: ', erro.message);
-  res.status(500).json({ erro: 'Falha interna do servidor' });
+  res.status(500).json({ erro: 'Falha interna do servidor', mensagem: erro });
 });

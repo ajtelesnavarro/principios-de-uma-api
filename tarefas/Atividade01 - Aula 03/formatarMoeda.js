@@ -1,9 +1,10 @@
 export function formatarMoeda(valor) {
-  if (!Number.isFinite(valor)) {
-    throw new TypeError('Valor monetário deve ser um número finito.');
+  if (typeof valor !== 'number' || !Number.isFinite(valor)) {
+      throw new Error('Valor monetário inválido.');
   }
+
   return new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
+      style: 'currency',
+      currency: 'BRL'
   }).format(valor);
 }
